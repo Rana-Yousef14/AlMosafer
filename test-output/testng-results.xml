@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-29T18:53:25 EET" name="Default suite" finished-at="2024-10-29T18:53:28 EET" duration-ms="3187">
+    <groups>
+    </groups>
+    <test started-at="2024-10-29T18:53:25 EET" name="Default test" finished-at="2024-10-29T18:53:28 EET" duration-ms="3187">
+      <class name="TestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCase@18920cc]" started-at="2024-10-29T18:53:25 EET" name="setUp" finished-at="2024-10-29T18:53:28 EET" duration-ms="3021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkTheEinglishLanguageIsDefault()[pri:1, instance:TestCase@18920cc]" started-at="2024-10-29T18:53:28 EET" name="checkTheEinglishLanguageIsDefault" finished-at="2024-10-29T18:53:28 EET" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheEinglishLanguageIsDefault -->
+        <test-method signature="checkTheCurrencyIsSAR()[pri:2, instance:TestCase@18920cc]" started-at="2024-10-29T18:53:28 EET" name="checkTheCurrencyIsSAR" finished-at="2024-10-29T18:53:28 EET" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheCurrencyIsSAR -->
+        <test-method signature="checkTheCotactNumber()[pri:3, instance:TestCase@18920cc]" started-at="2024-10-29T18:53:28 EET" name="checkTheCotactNumber" finished-at="2024-10-29T18:53:28 EET" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheCotactNumber -->
+        <test-method signature="checkTheQitafLogoThereInTheFooter()[pri:4, instance:TestCase@18920cc]" started-at="2024-10-29T18:53:28 EET" name="checkTheQitafLogoThereInTheFooter" finished-at="2024-10-29T18:53:28 EET" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTheQitafLogoThereInTheFooter -->
+      </class> <!-- TestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
