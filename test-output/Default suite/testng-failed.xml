@@ -5,7 +5,7 @@
     <classes>
       <class name="TestCase">
         <methods>
-          <include name="checkReturnDate"/>
+          <include name="randomlyChangeTheLanguage"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- TestCase -->
