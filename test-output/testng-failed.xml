@@ -5,9 +5,7 @@
     <classes>
       <class name="TestCase">
         <methods>
-          <include name="checkTheEinglishLanguageIsDefault"/>
-          <include name="checkTheCurrencyIsSAR"/>
-          <include name="checkTheCotactNumber"/>
+          <include name="checkReturnDate"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- TestCase -->

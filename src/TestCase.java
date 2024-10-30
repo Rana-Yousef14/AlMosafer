@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -36,8 +38,38 @@ public void checkTheCotactNumber() {
 }
 @Test (priority = 4)
 public void checkTheQitafLogoThereInTheFooter() {
-	boolean actualResult = driver.findElement(By.cssSelector(".sc-bdVaJa.bxRSiR.sc-ciodno.lkfeIG")).isDisplayed();
+	WebElement theFooter = driver.findElement(By.tagName("footer"));
+	boolean actualResult = theFooter.findElement(By.cssSelector(".sc-bdVaJa.bxRSiR.sc-ciodno.lkfeIG")).isDisplayed();
 	boolean expectedResult = true;
 	Assert.assertEquals(actualResult, expectedResult);
+}
+@Test (priority = 5)
+public void checkHotelTabIsNotSelected() {
+	WebElement hotelTab = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
+	String actualValue = hotelTab.getAttribute("aria-selected");
+	String expectedValue = "false";
+	Assert.assertEquals(actualValue, expectedValue);
+}
+@Test (priority = 6)
+public void checkDepatureDate() {
+	int today = LocalDate.now().getDayOfMonth();
+	int tomorrow = LocalDate.now().plusDays(1).getDayOfMonth();
+	
+//	System.out.println(today);
+//	System.out.println(tomorrow);
+//	System.out.println(dayAfterTomorrow);
+	
+	String actualDepatureDate = driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-lnrBVv gKbptE'] span[class='sc-fvLVrH hNjEjT']")).getText();
+	String expectedDepatureDate = Integer.toString(tomorrow);
+	Assert.assertEquals(actualDepatureDate, expectedDepatureDate);
+}
+@Test (priority = 7)
+public void checkReturnDate() {
+	int today = LocalDate.now().getDayOfMonth();
+	int dayAfterTomorrow = LocalDate.now().plusDays(2).getDayOfMonth();
+	
+	String actualReturnDate = driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-bYnzgO bojUIa'] span[class='sc-fvLVrH hNjEjT']")).getText();
+	String expectedReturnDate = Integer.toString(dayAfterTomorrow);
+	Assert.assertEquals(actualReturnDate, expectedReturnDate);
 }
 }
