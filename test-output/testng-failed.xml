@@ -5,8 +5,6 @@
     <classes>
       <class name="MyTestCases">
         <methods>
-          <include name="checkThatThePageIsFullyLoaded"/>
-          <include name="randomlyChangeTheLanguage"/>
           <include name="setUp"/>
           <include name="checkTheSortOption"/>
         </methods>
